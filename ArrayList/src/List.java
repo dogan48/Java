@@ -22,7 +22,7 @@ public class List {
 		}
 		else
 		{
-			System.out.println("Liste Doldu Ekleme Yapılamaz...");
+			System.out.println("Liste Doldu Ekleme YapÄ±lamaz...");
 		}
 	}
 	public void yaz()
@@ -37,7 +37,7 @@ public class List {
 	{
 		System.out.println("Mevcut liste:");
 		yaz();
-		System.out.print("Silinecek elemanın indexini giriniz:");
+		System.out.print("Silinecek elemanÄ±n indexini giriniz:");
 		
 		int silinecek=scn.nextInt();
 		if(silinecek<=elemanSayisi && silinecek>=0 )
@@ -56,13 +56,13 @@ public class List {
 			}
 			else
 			{
-				System.out.println("Liste boş!");
+				System.out.println("Liste boÅ£!");
 			}
 		
 		}
 		else
 		{
-			System.out.println("Yanlış index!");
+			System.out.println("YanlÃ½Å£ index!");
 			sil();
 		}
 	}
@@ -89,12 +89,12 @@ public class List {
 			}
 			else
 			{
-				System.out.println("Liste Doldu Ekleme Yapılamaz!");
+				System.out.println("Liste Doldu Ekleme YapÄ±lamaz!");
 			}
 		}
 		else
 		{
-			System.out.println("Yanlış index!");
+			System.out.println("YanlÄ±ÅŸ index!");
 			ekle();
 		}
 		
@@ -127,7 +127,7 @@ public class List {
 	}
 	public void ara()
 	{
-		System.out.println("Aradığınız elemanın adını yazınız:");
+		System.out.println("AradÄ±ÄŸÄ±nÄ±z elemanÄ±n adÄ±nÄ± giriniz:");
 		String aranacak=scn.next();
 		int arananIndex=-1;
 		for(int i=0;i<elemanSayisi;i++)
@@ -135,12 +135,12 @@ public class List {
 			if(eleman[i].compareToIgnoreCase(aranacak)==0)
 			{
 				arananIndex=i;
-				System.out.println("Aradğınız eleman "+ arananIndex + ". indexte bulundu.");
+				System.out.println("AradÄ±ÄŸÄ±nÄ±z eleman "+ arananIndex + ". indexte bulundu.");
 			}
 		}
 		if(arananIndex<0)
 		{
-			System.out.println("Aradığınız eleman bulunamadı!");
+			System.out.println("AradÄ±ÄŸÄ±nÄ±z eleman bulunamadÃ½!");
 		}
 	}
 }
